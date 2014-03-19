@@ -10,6 +10,7 @@ public class MessageInfo extends BaseModel {
 	private String title;
 	private String messageContext;
 	private Date modifyTime;
+	private String formatDatas;//业务模版数据
 
 	public Serializable getPK() {
 		return messageId;
@@ -57,5 +58,13 @@ public class MessageInfo extends BaseModel {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getFormatDatas() {
+		return formatDatas;
+	}
+
+	public void setFormatDatas(String formatDatas) {
+		this.formatDatas = formatDatas;
 	}
 }

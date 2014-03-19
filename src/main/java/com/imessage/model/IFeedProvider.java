@@ -1,4 +1,4 @@
-package com.imessage.model.feed;
+package com.imessage.model;
 
 /**
  * 提供其
