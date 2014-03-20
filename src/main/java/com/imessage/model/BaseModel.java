@@ -16,16 +16,13 @@ public abstract class BaseModel implements PK {
 		this.isEditing = isEditing;
 	}
 
-	private Date createDate;
+	private Date createDate = new Date();
 
 	public Date getCreateDate() {
 		return createDate;
 	}
 
 	public void setCreateDate(Date createDate) {
-		if (null == createDate) {
-			createDate = new Date();
-		}
 		this.createDate = createDate;
 	}
 }
