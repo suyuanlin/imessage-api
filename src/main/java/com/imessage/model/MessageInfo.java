@@ -2,10 +2,11 @@ package com.imessage.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.UUID;
 
 public class MessageInfo extends BaseModel {
 
-	private String messageId;
+	private String messageId = UUID.randomUUID().toString();
 	private String createUserId;
 	private String title;
 	private String messageContext;
